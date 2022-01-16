@@ -14,7 +14,7 @@ index = 0
 MAIN_FONT = ("Ariel", 11, "bold")
 SECONDARY_FONT = ("Ariel", 8, "bold")
 BACKGROUND_COLOR = "black"
-MUSIC_FOLDER = '/home/h78sh/Desktop/python/schöne/data/music'
+MUSIC_FOLDER = '/home/h78sh/Desktop/python/german_flashcards/data/music'
 
 
 window = Tk()
@@ -96,12 +96,12 @@ def next_song():
     for _ in range(len(mp3files)):
         index += 1
         mixer.music.stop()
-        mixer.music.load(f"/home/h78sh/Desktop/python/schöne/data/music/{mp3files[index]}")
+        mixer.music.load(f"/home/h78sh/Desktop/python/german_flashcards/data/music/{mp3files[index]}")
         name_of_song.config(text=(mp3files[index]))
         mixer.music.play()
         if index >= 13:
             index = 0
-        mixer.music.queue(f"/home/h78sh/Desktop/python/schöne/data/music/{mp3files[index + 1]}")
+        mixer.music.queue(f"/home/h78sh/Desktop/python/german_flashcards/data/music/{mp3files[index + 1]}")
         name_of_song.config(text=(mp3files[index]))
 
 
@@ -110,12 +110,12 @@ def previous_song():
     for _ in range(len(mp3files)):
         index -= 1
         mixer.music.stop()
-        mixer.music.load(f"/home/h78sh/Desktop/python/schöne/data/music/{mp3files[index]}")
+        mixer.music.load(f"/home/h78sh/Desktop/python/german_flashcards/data/music/{mp3files[index]}")
         name_of_song.config(text=(mp3files[index]))
         mixer.music.play()
         if index <= -14:
             index = -1
-        mixer.music.queue(f"/home/h78sh/Desktop/python/schöne/data/music/{mp3files[index -1]}")
+        mixer.music.queue(f"/home/h78sh/Desktop/python/german_flashcards/data/music/{mp3files[index -1]}")
         name_of_song.config(text=(mp3files[index]))
 
 
@@ -184,7 +184,7 @@ scale = Scale(window, from_=0.0, to=10.0, fg="white", bg=BACKGROUND_COLOR, orien
 scale.grid(row=2, column=3)
 
 mixer.init()
-mixer.music.load(f"/home/h78sh/Desktop/python/schöne/data/music/{mp3files[index]}")
+mixer.music.load(f"/home/h78sh/Desktop/python/german_flashcards/data/music/{mp3files[index]}")
 mixer.music.set_volume(0.05)
 next_song()
 
