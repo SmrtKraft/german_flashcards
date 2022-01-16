@@ -10,5 +10,9 @@ When you select '''don't know this word''' the program will save that word in or
 If you want to reset the flashcards as to include the previous deleted ones, just click on '''Delete Saved Words'''.
 
 
-https://user-images.githubusercontent.com/97520575/149662051-8e88e71d-9fe4-49e5-baa8-1e4f7f839409.mp4
+
+
+
+
+https://user-images.githubusercontent.com/97520575/149662507-2d33db06-eaf0-4642-b632-961786061a2f.mp4
 
